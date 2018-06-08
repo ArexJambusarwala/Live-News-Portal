@@ -23,10 +23,10 @@
     <div class="header" style="margin-top:10px;">
   	<h1 style="border-bottom: solid 4px black; padding-bottom:15px; padding-left:20px;">Add news</h1>
   </div>
-    <form class="form" action="" method="post">
+    <form action="server.php" method="post" class="form-horizontal">
         <div class="form-group">
         <label for="category">Select Category : </label>
-        <select class="form-control" id="category">
+        <select class="form-control" id="category" name="category">
             <option value="Select" disabled selected="selected">Select</option>
             <option value="Trending">Trending</option>
             <option value="India">India</option>
@@ -45,7 +45,7 @@
         </div>
         <br><br>
         <div class="form-group">
-            <label for="date">Add date : </label>
+            <label for="date" class="control-label">Add date : </label>
             <input type="date" class="form-control" id="date" name="date">
         </div>
         <br><br>
@@ -70,7 +70,7 @@
         </div>
         <br><br>
         <div class="form-group">
-            <button type="submit" class="btn btn-lg btn-basic">Submit</button>
+            <input type="submit" name="sub" value="submit">
         </div>
     </form>
     </div>
