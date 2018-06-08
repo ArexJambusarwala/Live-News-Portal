@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $db = mysqli_connect('localhost', 'root', '', 'news');
 ?>
 
 <!DOCTYPE html>
@@ -453,10 +452,29 @@
         </script>
 
     <script>
-                
-                document.getElementById("heading"+1).innerHTML="<?php echo $_SESSION["title"];?>";
-                document.getElementById("brief"+1).innerHTML="<?php echo $_SESSION["brief"];?>";
-                document.getElementById("date"+1).innerHTML="<?php echo $_SESSION["d"];?>";
+                document.getElementById("heading"+1).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Title` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+                document.getElementById("brief"+1).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Brief` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+1).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Date` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
             
         </script>
     
