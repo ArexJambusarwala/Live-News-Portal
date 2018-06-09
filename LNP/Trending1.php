@@ -116,7 +116,7 @@
     <div class="container-fluid">
          <div class="row">
             <div class="col col-lg-2" style="padding-left: 0;">
-        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="120">
+        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="100">
 
             <ul class="list-unstyled components" id="sideul">
                 <li><a href="India.html" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
@@ -238,8 +238,50 @@
                       <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent"></p>
                   
                   </div>
-                  <div class="col-lg-4" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px"><h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
-                  <hr>
+
+                  
+                  
+                  
+
+                         <nav class="col-lg-4" id="scrollspy">
+                                 <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="100" id="stackul">
+                                     <li>                      <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                      </div></li><hr>
+                                      <li>                      <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                      </div></li><hr>
+                                      <li>                      <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                      </div></li><hr>
+                                    
+                                     <li>                      <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                      </div></li><hr>
+                             </ul>
+                  </nav>
+                      
+                     <!-- <center><h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Column</h2></center>
                       <div class="container-fluid">
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
@@ -292,9 +334,10 @@
                       <hr>
                       
                       </div>
+                  -->
                   </div>
 </div>
-            </div></div></div><br>
+            </div></div><br>
 <footer class="container-fluid" id="footer">
     <div class="container" style="margin-bottom: 30; border-bottom:1px solid rgba(255,255,255,.5)">
        <div class="row text-center d-flex justify-content-center pt-5 mb-3">

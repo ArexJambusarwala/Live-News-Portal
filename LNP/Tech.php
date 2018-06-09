@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
 
 </head>
@@ -59,7 +63,7 @@
                             <li><a href="#">Fashion</a></li>
                             <li><a href="#">Sci-tech</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
-                            <li><a href="#">All Trending News</a></li>
+                            <li><a href="index.php">All Trending News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)" ><a class="dropdown-toggle" data-toggle="dropdown" href="India.html" ><b style="font-size: 20px;">India</b>&nbsp;<i class="fa fa-caret-down"></i></a>
@@ -67,7 +71,7 @@
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Civil</a></li>
-                            <li><a href="#">All Indian News</a></li>
+                            <li><a href="India.php">All Indian News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle" data-toggle="dropdown" href="World.html" ><b style="font-size: 20px;">World</b>&nbsp;<i class="fa fa-caret-down"></i></a>
@@ -75,7 +79,7 @@
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Civil</a></li>
-                            <li><a href="#">All World News</a></li>
+                            <li><a href="World.php">All World News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"onmouseover="caret(this)" onmouseout="caretOff(this)">
@@ -84,7 +88,7 @@
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
-                            <li><a href="#">All Sports News</a></li>
+                            <li><a href="Sports.php">All Sports News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
@@ -93,7 +97,7 @@
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
-                            <li><a href="#">All Tech News</a></li>
+                            <li><a href="Tech.php">All Tech News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
@@ -102,7 +106,7 @@
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
                             <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
-                            <li><a href="#">All Business News</a></li>
+                            <li><a href="Business.php">All Business News</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,17 +126,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-lg-2" style="padding-left: 0;">
-        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="120">
+        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="100">
 
             <ul class="list-unstyled components" id="sideul">
-                <li><a href="India.html" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
-                <li><a href="Politics.html" title="Politics">Politics<img src="Politician-512.png"   heigth="15" ; width="15.4" style="float: right;"></a></li>
-                <li><a href="World.html" title="World">World<i class="glyphicon glyphicon-globe" style="float: right;"></i></a></li>
-                <li><a href="Business.html" title="Business">Business<i class="glyphicon glyphicon-usd" style="float: right;"></i></a></li>
-                <li><a href="Tech.html" title="Tech">Tech<i class="glyphicon glyphicon-phone" style="float: right;"></i></a></li>
-                <li><a href="Entertainment.html" title="Entertainment">Entertainment<i class="glyphicon glyphicon-headphones" style="float: right;"></i></a></li>
-                <li><a href="Sports.html" title="Sports">Sports<img src="sports_equipment-07-512.png" style="float: right; heigth="15" ; width="15.4""></a></li>
-                <li><a href="Videos.html" title="Videos">Videos<i class="glyphicon glyphicon-expand" style="float: right;"></i></a></li>
+                <li><a href="India.php" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
+                <li><a href="Politics.php" title="Politics">Politics<img src="Politician-512.png"   heigth="15" ; width="15.4" style="float: right;"></a></li>
+                <li><a href="World.php" title="World">World<i class="glyphicon glyphicon-globe" style="float: right;"></i></a></li>
+                <li><a href="Business.php" title="Business">Business<i class="glyphicon glyphicon-usd" style="float: right;"></i></a></li>
+                <li><a href="Tech.php" title="Tech">Tech<i class="glyphicon glyphicon-phone" style="float: right;"></i></a></li>
+                <li><a href="Entertainment.php" title="Entertainment">Entertainment<i class="glyphicon glyphicon-headphones" style="float: right;"></i></a></li>
+                <li><a href="Sports.php" title="Sports">Sports<img src="sports_equipment-07-512.png" style="float: right; heigth="15" ; width="15.4""></a></li>
+                <li><a href="Videos.php" title="Videos">Videos<i class="glyphicon glyphicon-expand" style="float: right;"></i></a></li>
                 <li><a href="Ideas.html" title="Ideas">Ideas<img src="Idea_Electricity_Bulb_Innovation_Innovative_Lightbulb1-512.png" style="float: right;"  heigth="15" ; width="15.4"></a></li>
                 <li><a href="About_us.html" title="About us">About us<i class="glyphicon glyphicon-comment" style="float: right;"></i></a></li>
                 <li><a href="Help.html" title="Help">Help<i class="glyphicon glyphicon-question-sign" style="float: right;"></i></a></li>
@@ -228,48 +232,63 @@
             -->
         <div class="col col-lg-10">
         <div id="content" class="container">
-            <center><h1 style="margin-top: 5px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;">Trending</h1></center>
+            <center><h1 style="margin-top: 5px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;">Tech</h1></center>
               <div class="row">
-                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                      <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div>
-
-
-             </div></a>
-                                 <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                                     <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
-                  
-                  
-               <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                   <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
+                  <div id="tech_1">
+                  <a  href="Trending1.php" title="Read more">
+                      <div class="col-sm-3 col-md-3 col-lg-3">
+                          <img id="image1" src="" width=262.5 height=280 style="  object-fit: cover;">
+                          <center>
+                              <h3 id="heading1" style="max-height: 79.2px; overflow:hidden"></h3>
+                          </center>
+                          <span id="brief1" style="max-height: 136px; overflow:hidden"></span>
+                          <br><br>
+                      <div class="uploadDate">
+                          <strong style="color: lightgrey" id="date1"></strong>
+                      </div>
+                     </div>
+                    </a>
+                  </div>
+                  <div id="tech_2">
+                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
+                                     <div class="uploadDate"><strong style="color: lightgrey" id="date2"></strong></div></div></a>
+                  </div>
+                  <div id="tech_3">
+                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                   <div class="uploadDate"><strong style="color: lightgrey" id="date3">1st June 2018</strong></div></div></a>
+                  </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
                       <hr>
                                             <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
                       <hr>
                                             <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
@@ -277,46 +296,53 @@
 </div>
         </div><br><br><br>
                           <div class="row">
-                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                      <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div>
+                              <div id="tech_4">
+                                  <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                      <div class="uploadDate"><strong style="color: lightgrey" id="date4">1st June 2018</strong></div>
 
 
                       </div></a>
-                                    <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                                        <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
-                  
-                  
-                <a  href="News.html"title="Read more">  <div class="col-sm-3 col-md-3 col-lg-3" ><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                    <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
+                              </div>
+                                  <div id="tech_5">
+                                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date5">1st June 2018</strong></div></div></a>
+                              </div>
+                  <div id="tech_6">
+                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date6">1st June 2018</strong></div></div></a>
+                              </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
                       <hr>
                                             <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
                       <hr>
                                             <div class="container-fluid">
                             <div class="row">
+                                <a href="Trending1.php">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div></a>
                           </div>
                       </div>
                       
@@ -390,8 +416,6 @@
         <script>
             document.current = 1;
             var current = document.current;
-            document.side = 1;
-            var side = document.side;
 
             function toggleSearch() {
                 if (current == 1) {
@@ -409,16 +433,6 @@
                 }
             }
 
-            function toggleSide() {
-                if (side == 1) {
-                    document.getElementById("sideul").style.borderBottomColor = "whitesmoke";
-                    document.getElementById("sideHeader").style.backgroundColor = "white";
-                    side = 0;
-                } else {
-                    document.getElementById("sideul").style.borderColor = "black";
-                    side = 1;
-                }
-            }
 
             function caret(a)
             {
@@ -443,7 +457,46 @@
 
         </script>
 
-    
+    <script>
+        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT COUNT(*) FROM tech";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["COUNT(*)"]?>;i++)
+        {
+                document.getElementById("heading"+i).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Title` FROM `tech` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+             document.getElementById("image"+i).src="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Image` FROM `tech` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+i).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Brief` FROM `tech` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+i).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Date` FROM `tech` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+        }
+        </script>
     
 </body>
 

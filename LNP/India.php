@@ -234,7 +234,7 @@
         <div id="content" class="container">
             <center><h1 style="margin-top: 5px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;">India</h1></center>
               <div class="row">
-                  <div id="trending_1">
+                  <div id="india_1">
                   <a  href="Trending1.php" title="Read more">
                       <div class="col-sm-3 col-md-3 col-lg-3">
                           <img id="image1" src="" width=262.5 height=280 style="  object-fit: cover;">
@@ -249,12 +249,12 @@
                      </div>
                     </a>
                   </div>
-                  <div id="trending_2">
-                      <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
+                  <div id="india_2">
+                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
                                      <div class="uploadDate"><strong style="color: lightgrey" id="date2"></strong></div></div></a>
                   </div>
-                  <div id="trending_3">
-                      <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                  <div id="india_3">
+                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                    <div class="uploadDate"><strong style="color: lightgrey" id="date3">1st June 2018</strong></div></div></a>
                   </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
@@ -293,19 +293,19 @@
 </div>
         </div><br><br><br>
                           <div class="row">
-                              <div id="trending_4">
-                                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                              <div id="india_4">
+                                  <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                       <div class="uploadDate"><strong style="color: lightgrey" id="date4">1st June 2018</strong></div>
 
 
                       </div></a>
                               </div>
-                                  <div id="trending_5">
-                                      <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                  <div id="india_5">
+                                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                                         <div class="uploadDate"><strong style="color: lightgrey" id="date5">1st June 2018</strong></div></div></a>
                               </div>
-                  <div id="trending_6">
-                      <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                  <div id="india_6">
+                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                                         <div class="uploadDate"><strong style="color: lightgrey" id="date6">1st June 2018</strong></div></div></a>
                               </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
