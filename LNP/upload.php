@@ -41,7 +41,7 @@
         <br><br>
         <div class="form-group">
             <label for="title">Add title : </label>
-            <input type="text" class="form-control" id="title" name="title">
+            <input maxlength="60" type="text" class="form-control" id="title" name="title" placeholder="Max 60 characters">
         </div>
         <br><br>
         <div class="form-group">
@@ -51,17 +51,17 @@
         <br><br>
         <div class="form-group">
             <label for="brief">Add display text : </label>
-            <textarea class="form-control" id="brief" rows="5" name="brief"></textarea>
+            <textarea maxlength="260" class="form-control" id="brief" rows="5" name="brief"  placeholder="Max 260 characters"></textarea>
         </div>
         <br><br>
         <div class="form-group">
-            <input id="upload" type="file" onchange="readURL(this);" accept="image/*"/>
+            <input id="upload" name="upload" type="file" onchange="readURL(this);" accept="image/*"/>
             <img id="blah" src="#" alt="" style="object-fit: cover"/>
         </div>
         <br><br>
         <div class="form-group">
             <label for="highlights">Add highlights : </label>
-            <textarea class="form-control" id="highlights" rows="5" name="highlights"></textarea>
+            <textarea maxlength="260" class="form-control" id="highlights" rows="5" name="highlights" placeholder="Max 260 characters"></textarea>
         </div>
         <br><br>
         <div class="form-group">

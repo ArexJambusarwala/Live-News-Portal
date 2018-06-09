@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
 
 </head>
@@ -122,7 +126,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-lg-2" style="padding-left: 0;">
-        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="120">
+        <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="100">
 
             <ul class="list-unstyled components" id="sideul">
                 <li><a href="India.html" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
@@ -230,17 +234,29 @@
         <div id="content" class="container">
             <center><h1 style="margin-top: 5px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;">India</h1></center>
               <div class="row">
-                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                      <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div>
-
-
-             </div></a>
-                                 <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                                     <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
-                  
-                  
-               <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                   <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
+                  <div id="trending_1">
+                  <a  href="Trending1.php" title="Read more">
+                      <div class="col-sm-3 col-md-3 col-lg-3">
+                          <img id="image1" src="" width=262.5 height=280 style="  object-fit: cover;">
+                          <center>
+                              <h3 id="heading1" style="max-height: 79.2px; overflow:hidden"></h3>
+                          </center>
+                          <span id="brief1" style="max-height: 136px; overflow:hidden"></span>
+                          <br><br>
+                      <div class="uploadDate">
+                          <strong style="color: lightgrey" id="date1"></strong>
+                      </div>
+                     </div>
+                    </a>
+                  </div>
+                  <div id="trending_2">
+                      <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
+                                     <div class="uploadDate"><strong style="color: lightgrey" id="date2"></strong></div></div></a>
+                  </div>
+                  <div id="trending_3">
+                      <a  href="News.html"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                   <div class="uploadDate"><strong style="color: lightgrey" id="date3">1st June 2018</strong></div></div></a>
+                  </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
@@ -277,17 +293,21 @@
 </div>
         </div><br><br><br>
                           <div class="row">
-                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                      <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div>
+                              <div id="trending_4">
+                                  <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                      <div class="uploadDate"><strong style="color: lightgrey" id="date4">1st June 2018</strong></div>
 
 
                       </div></a>
-                                    <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3" style=" border-right: 2px solid; border-right-color:lightgrey"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                                        <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
-                  
-                  
-                <a  href="News.html"title="Read more">  <div class="col-sm-3 col-md-3 col-lg-3" ><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280;><center><h3>Govt govt govt govtgovt</h3></center>"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-                    <div class="uploadDate"><strong style="color: lightgrey">1st June 2018</strong></div></div></a>
+                              </div>
+                                  <div id="trending_5">
+                                      <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date5">1st June 2018</strong></div></div></a>
+                              </div>
+                  <div id="trending_6">
+                      <a  href="News.html"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date6">1st June 2018</strong></div></div></a>
+                              </div>
                   <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
@@ -390,8 +410,6 @@
         <script>
             document.current = 1;
             var current = document.current;
-            document.side = 1;
-            var side = document.side;
 
             function toggleSearch() {
                 if (current == 1) {
@@ -409,16 +427,6 @@
                 }
             }
 
-            function toggleSide() {
-                if (side == 1) {
-                    document.getElementById("sideul").style.borderBottomColor = "whitesmoke";
-                    document.getElementById("sideHeader").style.backgroundColor = "white";
-                    side = 0;
-                } else {
-                    document.getElementById("sideul").style.borderColor = "black";
-                    side = 1;
-                }
-            }
 
             function caret(a)
             {
@@ -443,7 +451,46 @@
 
         </script>
 
-    
+    <script>
+        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT COUNT(*) FROM india";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["COUNT(*)"]?>;i++)
+        {
+                document.getElementById("heading"+i).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Title` FROM `india` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+             document.getElementById("image"+i).src="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Image` FROM `india` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+i).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Brief` FROM `india` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+i).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Date` FROM `india` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+        }
+        </script>
     
 </body>
 

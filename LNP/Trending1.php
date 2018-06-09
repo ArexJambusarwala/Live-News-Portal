@@ -224,18 +224,18 @@
         <div id="content" class="container-fluid">
               <div class="row">
                   <div class="col-lg-8">
-                      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h2>
-                  <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;">1st June 2018</strong></div><br><br>
+                      <h2 id="heading"></h2>
+                  <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;" id="date"></strong></div><br><br>
                       <div class="container-fluid">
                           <div class="row">
                               <div class="col col-lg-6">
-                                  <img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width="382" height="300" style="  object-fit: cover;"></div>
-                              <div class="col col-lg-6" style="background-color: #f5f5f5; max-height: 300px"><center><h4 style="border-bottom: 2px solid gray; padding-bottom: 2px;">Highlights</h4></center>am, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."s nisi ut aliquip ex ea commodo consequat."rief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                  <img src="" width="382" height="300" style="object-fit: cover;" id="image"></div>
+                              <div class="col col-lg-6" style="background-color: #f5f5f5; max-height: 300px"><center><h4 style="border-bottom: 2px solid gray; padding-bottom: 2px;">Highlights</h4></center><span id="high" style="font-size:17px;"></span>
                               </div>
                           </div>
                       </div>
                       <br><br>
-                      <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."s nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."s nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                      <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent"></p>
                   
                   </div>
                   <div class="col-lg-4" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px"><h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
@@ -396,6 +396,46 @@
             });
 
         </script>
+    <script>
+        document.getElementById("date").innerHTML="<?php 
+             $db = mysqli_connect('localhost', 'root', '', 'news');
+             $query="SELECT `Date` FROM `trending` WHERE `ID`=1";
+             $query=mysqli_real_escape_string($db,$query);
+             $result=mysqli_query($db,$query);
+             $row=mysqli_fetch_assoc($result);
+             echo $row["Date"];            
+            
+            ?>"
+        document.getElementById("heading").innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Title` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+             document.getElementById("image").src="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Image` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+        document.getElementById("newsContent").innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Content` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Content"];?>";
+            document.getElementById("high").innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $query="SELECT `Highlights` FROM `trending` WHERE `ID`=1";
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Highlights"];?>";
+        
+    </script>
 
 </body>
 
