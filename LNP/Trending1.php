@@ -37,9 +37,9 @@
 
     </script>
 
-    <nav class="navbar navbar-default " data-spy="affix" data-offset-top="100">
+    <nav class="navbar navbar-default" id="navaffix" data-spy="affix" data-offset-top="100">
         <div class="container-fluid" id="navb">
-            <div class="navbar-header" style="padding-right:260px;">
+            <div class="navbar-header" style="padding-right:330px;">
                 <div class="menu-icon">
                     <a href="javascript:void(0)" id="menu-button">
                         <!-- <span class="menu-text hidden-xs">Menu</span> --><i class="icon"></i>
@@ -53,50 +53,56 @@
                 <a class="navbar-brand" id="sidebarCollapse" onclick="toggleSide()" title="Menu"><img src="menu-alt-256.png" height=30 width=30></a>
             </div>
             <div class="collapse navbar-collapse" id="navToggle">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navul">
                     <li class="dropdown active" style="margin-left:10px;margin-right: 10px;"onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" ><b style="font-size: 20px;">Trending</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Fashion</a></li>
                             <li><a href="#">Sci-tech</a></li>
-                            <li><a href="#">Tennis</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
+                            <li><a href="index.php">All Trending News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)" ><a class="dropdown-toggle" data-toggle="dropdown" href="India.html" ><b style="font-size: 20px;">India</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
-                            <li><a href="#">Civil</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Civil</a></li>
+                            <li><a href="India.php">All Indian News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle" data-toggle="dropdown" href="./Topics/World.html" ><b style="font-size: 20px;">World</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle" data-toggle="dropdown" href="World.html" ><b style="font-size: 20px;">World</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
-                            <li><a href="#">Civil</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Civil</a></li>
+                            <li><a href="World.php">All World News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"onmouseover="caret(this)" onmouseout="caretOff(this)">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="./Topics/Sports.html"  ><b style="font-size: 20px;">Sports</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="Sports.html"  ><b style="font-size: 20px;">Sports</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
-                            <li><a href="#">Tennis</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
+                            <li><a href="Sports.php">All Sports News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="./Topics/Tech.html" ><b style="font-size: 20px;">Tech</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="Tech.html" ><b style="font-size: 20px;">Tech</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
-                            <li><a href="#">Tennis</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
+                            <li><a href="Tech.php">All Tech News</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="./Topics/Business.html" ><b style="font-size: 20px;">Business</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Business.html" ><b style="font-size: 20px;">Business</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
                             <li><a href="#">Football</a></li>
-                            <li><a href="#">Tennis</a></li>
+                            <li style="border-bottom: 2px solid black"><a href="#">Tennis</a></li>
+                            <li><a href="Business.php">All Business News</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -119,13 +125,13 @@
         <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="100">
 
             <ul class="list-unstyled components" id="sideul">
-                <li><a href="India.html" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
-                <li><a href="Politics.html" title="Politics">Politics<img src="Politician-512.png"   heigth="15" ; width="15.4" style="float: right;"></a></li>
-                <li><a href="World.html" title="World">World<i class="glyphicon glyphicon-globe" style="float: right;"></i></a></li>
-                <li><a href="Business.html" title="Business">Business<i class="glyphicon glyphicon-usd" style="float: right;"></i></a></li>
-                <li><a href="Tech.html" title="Tech">Tech<i class="glyphicon glyphicon-phone" style="float: right;"></i></a></li>
-                <li><a href="Entertainment.html" title="Entertainment">Entertainment<i class="glyphicon glyphicon-headphones" style="float: right;"></i></a></li>
-                <li><a href="Sports.html" title="Sports">Sports<img src="sports_equipment-07-512.png" style="float: right; heigth="15" ; width="15.4""></a></li>
+                <li><a href="India.php" title="India">India<img src="India-512.png" style="float: right;"   heigth="15" ; width="15.4"></a></li>
+                <li><a href="Politics.php" title="Politics">Politics<img src="Politician-512.png"   heigth="15" ; width="15.4" style="float: right;"></a></li>
+                <li><a href="World.php" title="World">World<i class="glyphicon glyphicon-globe" style="float: right;"></i></a></li>
+                <li><a href="Business.php" title="Business">Business<i class="glyphicon glyphicon-usd" style="float: right;"></i></a></li>
+                <li><a href="Tech.php" title="Tech">Tech<i class="glyphicon glyphicon-phone" style="float: right;"></i></a></li>
+                <li><a href="Entertainment.php" title="Entertainment">Entertainment<i class="glyphicon glyphicon-headphones" style="float: right;"></i></a></li>
+                <li><a href="Sports.php" title="Sports">Sports<img src="sports_equipment-07-512.png" style="float: right; heigth="15" ; width="15.4""></a></li>
                 <li><a href="Videos.html" title="Videos">Videos<i class="glyphicon glyphicon-expand" style="float: right;"></i></a></li>
                 <li><a href="Ideas.html" title="Ideas">Ideas<img src="Idea_Electricity_Bulb_Innovation_Innovative_Lightbulb1-512.png" style="float: right;"  heigth="15" ; width="15.4"></a></li>
                 <li><a href="About_us.html" title="About us">About us<i class="glyphicon glyphicon-comment" style="float: right;"></i></a></li>
@@ -280,13 +286,27 @@
                       </div>
                       <br><br>
                       <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent">Lmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                      </section>
+                      </section><center>
+                      <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                    </div>
+                      </center>
+                      
                   </div>
                   
                   
                   
                          <nav class="col-lg-4" id="scrollspy">
                                  <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="100" id="stackul">
+                                     
+                                    
                                      <li class="active" id="data1"> <a href="#section1" onclick="                document.getElementById('myBar1').style.width='0%';"> <div class="container-fluid">                    
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
@@ -302,6 +322,8 @@
                                     </div></div>
                                          
                       </a></li>
+                                     
+                                     
                                       <li id="data2">            <a href="#section2" onclick="document.getElementById('myBar2').style.width='0%';">            <div class="container-fluid">
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
@@ -317,6 +339,8 @@
                                     </div></div>
                                           
                                           </a></li>
+                                     
+                                     
                                       <li id="data3">    <a href="#section3" onclick="document.getElementById('myBar3').style.width='0%'">                   <div class="container-fluid">
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
@@ -476,7 +500,7 @@
             function toggleSearch() {
                 if (current == 1) {
                     document.getElementById("navb").style.transition = "all 1s";
-                    document.getElementById("navb").style.marginLeft = "-1000px";
+                    document.getElementById("navb").style.marginLeft = "-1200px";
                     document.getElementById("searchBox").style.visibility = "visible";
                     document.getElementById("glysearch").className = "glyphicon glyphicon-remove";
                     current = 0;
