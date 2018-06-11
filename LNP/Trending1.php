@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target="#scrollspy" data-offset="0">
 
 
     <div id="particles-js">
@@ -224,7 +224,8 @@
         <div id="content" class="container-fluid">
               <div class="row">
                   <div class="col-lg-8">
-                      <h2 id="heading"></h2>
+                      <section data-id="1" id="section1"  style="padding-top:55px">
+                          <h2 id="heading"></h2>
                   <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;" id="date"></strong></div><br><br>
                       <div class="container-fluid">
                           <div class="row">
@@ -236,50 +237,121 @@
                       </div>
                       <br><br>
                       <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent"></p>
-                  
+                      </section>
+                      
+                      <section data-id="2" id="section2" style="padding-top:40px">
+                      <h2 id="heading">dqdqdqdqd dqd qd q dd qd qdq</h2>
+                  <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;" id="date">dqdqdqdqd</strong></div><br><br>
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col col-lg-6">
+                                  <img src="" width="382" height="300" style="object-fit: cover;" id="image"></div>
+                              <div class="col col-lg-6" style="background-color: #f5f5f5; max-height: 300px"><center><h4 style="border-bottom: 2px solid gray; padding-bottom: 2px;">Highlights</h4></center><span id="high" style="font-size:17px;"></span>
+                              </div>
+                          </div>
+                      </div>
+                      <br><br>
+                      <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent">Lmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                      </section>
+                      <section data-id="3" id="section3" style="padding-top:40px">
+                      <h2 id="heading">mclmc</h2>
+                  <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;" id="date"></strong></div><br><br>
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col col-lg-6">
+                                  <img src="" width="382" height="300" style="object-fit: cover;" id="image"></div>
+                              <div class="col col-lg-6" style="background-color: #f5f5f5; max-height: 300px"><center><h4 style="border-bottom: 2px solid gray; padding-bottom: 2px;">Highlights</h4></center><span id="high" style="font-size:17px;"></span>
+                              </div>
+                          </div>
+                      </div>
+                      <br><br>
+                      <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent">Lmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                      </section>
+                      <section data-id="4" id="section4" style="padding-top:40px">
+                      <h2 id="heading">qdqd</h2>
+                  <div class="uploadDate" style="border-bottom: 1px solid black;"><strong style="color: lightgrey;" id="date"></strong></div><br><br>
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col col-lg-6">
+                                  <img src="" width="382" height="300" style="object-fit: cover;" id="image"></div>
+                              <div class="col col-lg-6" style="background-color: #f5f5f5; max-height: 300px"><center><h4 style="border-bottom: 2px solid gray; padding-bottom: 2px;">Highlights</h4></center><span id="high" style="font-size:17px;"></span>
+                              </div>
+                          </div>
+                      </div>
+                      <br><br>
+                      <p style="font-size: 150%; font-family: 'Droid Sans', Helvetica, Arial, sans-serif;" id="newsContent">Lmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                      </section>
                   </div>
-
                   
                   
                   
-
                          <nav class="col-lg-4" id="scrollspy">
                                  <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="100" id="stackul">
-                                     <li>                      <div class="container-fluid">
+                                     <li class="active" id="data1"> <a href="#section1" onclick="                document.getElementById('myBar1').style.width='0%';"> <div class="container-fluid">                    
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
-                          </div>
-                      </div></li><hr>
-                                      <li>                      <div class="container-fluid">
-                            <div class="row">
-                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
-                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
-                                    </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
-                          </div>
-                      </div></li><hr>
-                                      <li>                      <div class="container-fluid">
-                            <div class="row">
-                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
-                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
-                                    </div>
-                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
-                          </div>
-                      </div></li><hr>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;">
                                     
-                                     <li>                      <div class="container-fluid">
+                                </div></div></div>
+                                <div class="row" style="height:8px;"><div class="container-fluid"  style="height:8px;">
+                                      <span class="progress-container">
+                                        <span class="progress-bar" id="myBar1"></span>
+                                    </span>
+                                    </div></div>
+                                         
+                      </a></li>
+                                      <li id="data2">            <a href="#section2" onclick="document.getElementById('myBar2').style.width='0%';">            <div class="container-fluid">
                             <div class="row">
                                 <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
                                     <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
                                     </div>
                                 <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
                           </div>
-                      </div></li><hr>
+                                          </div>
+                                          <div class="row" style="height:8px;"><div class="container-fluid"  style="height:8px;">
+                                      <span class="progress-container">
+                                        <span class="progress-bar" id="myBar2"></span>
+                                    </span>
+                                    </div></div>
+                                          
+                                          </a></li>
+                                      <li id="data3">    <a href="#section3" onclick="document.getElementById('myBar3').style.width='0%'">                   <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                                          </div>
+                                          <div class="row" style="height:8px;"><div class="container-fluid"  style="height:8px;">
+                                      <span class="progress-container">
+                                        <span class="progress-bar" id="myBar3"></span>
+                                    </span>
+                                    </div></div>
+                                          
+                                          
+                                         </a> </li>
+                                    
+                                     <li id="data4">   <a href="#section4" onclick="document.getElementById('myBar4').style.width='0%'">                    <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:18px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                          </div>
+                                         </div>
+                                         <div class="row" style="height:8px;"><div class="container-fluid"  style="height:8px;">
+                                      <span class="progress-container">
+                                        <span class="progress-bar" id="myBar4"></span>
+                                    </span>
+                                    </div></div>
+                                         
+                                         
+                                         </a></li>
                              </ul>
-                  </nav>
+    </nav></div>
                       
                      <!-- <center><h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Column</h2></center>
                       <div class="container-fluid">
@@ -337,7 +409,7 @@
                   -->
                   </div>
 </div>
-            </div></div><br>
+             </div></div></div><br>
 <footer class="container-fluid" id="footer">
     <div class="container" style="margin-bottom: 30; border-bottom:1px solid rgba(255,255,255,.5)">
        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
@@ -479,6 +551,69 @@
                     echo $row["Highlights"];?>";
         
     </script>
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var elemTop=$("#section1").offset().top;
+  var height = $("#section1").height();
+  var scTop=$(window).scrollTop();
+  var scrolled = ((scTop-elemTop) / height) * 100;
+  document.getElementById("myBar1").style.width = scrolled + "%";
+    
+  var elemTop=$("#section2").offset().top;
+  var height = $("#section2").height();
+  var scTop=$(window).scrollTop();
+  var scrolled = ((scTop-elemTop) / height) * 100;
+  document.getElementById("myBar2").style.width = scrolled + "%";
+    
+  var elemTop=$("#section3").offset().top;
+  var height = $("#section3").height();
+  var scTop=$(window).scrollTop();
+  var scrolled = ((scTop-elemTop) / height) * 100;
+  document.getElementById("myBar3").style.width = scrolled + "%";
+    
+  var elemTop=$("#section4").offset().top;
+  var height = $("#section4").height();
+  var scTop=$(window).scrollTop();
+  var scrolled = ((scTop-elemTop) / height) * 100;
+  document.getElementById("myBar4").style.width = scrolled + "%";
+    
+   var i;
+    for(i=1;i<=4;i++)
+    {
+        if(document.getElementById("data"+i).className!="active")
+            {
+                document.getElementById("myBar"+i).style.visibility="hidden";
+            }
+        else
+            {
+                document.getElementById("myBar"+i).style.visibility="visible";
+            }
+    }
+}       
+</script>
+<script>
+$(document).on('scroll',function(e)
+{
+    $('section').each(function()
+    {
+        if ( $(this).offset().top < window.pageYOffset + 10 
+        &&   $(this).offset().top + 
+             $(this).height() > window.pageYOffset + 10
+           ) 
+        {
+          var data = $(this).data('id');
+          window.location.hash = data;
+        }
+    });
+});    
+    
+</script>
+        
+
+    
+
 
 </body>
 

@@ -472,3 +472,15 @@ a.dropdown-toggle:hover
     z-index: 9998 !important;
     width=100%;
 }
+ .progress-container {
+  width: 100%;
+  height: 8px;
+  background: inherit;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
