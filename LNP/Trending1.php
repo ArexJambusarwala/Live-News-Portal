@@ -537,7 +537,7 @@
         </script>
     <script>
         document.getElementById("date").innerHTML="<?php 
-             $db = mysqli_connect('localhost', 'root', '', 'news');
+             $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
              $query="SELECT `Date` FROM `trending` WHERE `ID`=1";
              $query=mysqli_real_escape_string($db,$query);
              $result=mysqli_query($db,$query);
@@ -546,28 +546,28 @@
             
             ?>"
         document.getElementById("heading").innerHTML="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Title` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Title"];?>";
              document.getElementById("image").src="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Image` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Image"];?>";
         document.getElementById("newsContent").innerHTML="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Content` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Content"];?>";
             document.getElementById("high").innerHTML="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Highlights` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   

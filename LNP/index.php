@@ -9,6 +9,9 @@
     <title>NEWS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal with the latest news">
+    <meta name="keywords" content="live,news,portal,trending,politics,business,livenewsportal">
+    <meta name="author" content="Arex Jambusarwala">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,7 +25,7 @@
 </head>
 
 
-<body>
+<body onload="searchStart()">
 
 
     <div id="particles-js">
@@ -113,9 +116,20 @@
                 <ul class="nav navbar-nav navbar-right">
                     <a  style="font-size: 30px; top: 1%;" onclick="toggleSearch()"><i class="glyphicon glyphicon-search" id="glysearch"></i></a>
                 </ul>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search" id="searchBox" style="visibility: hidden">
+                <form class="navbar-form navbar-right" style="max-width:355px !important;">
+                    <div class="form-group" >
+                        <script>
+  (function() {
+    var cx = '001135896050108742372:rtujuu1x3ik';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script><span id="searchBox">
+                        <gcse:search></gcse:search></span>
                     </div>
                 </form>
             </div>
@@ -236,7 +250,7 @@
               <div class="row">
                   <div id="trending_1">
                   <a  href="Trending1.php" title="Read more">
-                      <div class="col-sm-3 col-md-3 col-lg-3">
+                      <div class="col-md-4 col-lg-3">
                           <img id="image1" src="" width=262.5 height=280 style="  object-fit: cover;">
                           <center>
                               <h3 id="heading1" style="max-height: 79.2px; overflow:hidden"></h3>
@@ -250,14 +264,14 @@
                     </a>
                   </div>
                   <div id="trending_2">
-                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
+                      <a  href="Trending1.php"title="Read more">   <div class="col-md-4 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
                                      <div class="uploadDate"><strong style="color: lightgrey" id="date2"></strong></div></div></a>
                   </div>
                   <div id="trending_3">
-                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                      <a  href="Trending1.php"title="Read more">   <div class="col-md-4 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                    <div class="uploadDate"><strong style="color: lightgrey" id="date3">1st June 2018</strong></div></div></a>
                   </div>
-                  <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
+                  <div class="col-md-0 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
@@ -297,21 +311,21 @@
         </div><br><br><br>
                           <div class="row">
                               <div id="trending_4">
-                                  <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                  <a  href="Trending1.php"title="Read more"><div class="col-md-4 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                       <div class="uploadDate"><strong style="color: lightgrey" id="date4">1st June 2018</strong></div>
 
 
                       </div></a>
                               </div>
                                   <div id="trending_5">
-                                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                                      <a  href="Trending1.php"title="Read more"><div class="col-md-4 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                                         <div class="uploadDate"><strong style="color: lightgrey" id="date5">1st June 2018</strong></div></div></a>
                               </div>
                   <div id="trending_6">
-                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
+                      <a  href="Trending1.php"title="Read more"><div class="col-md-4 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
                                         <div class="uploadDate"><strong style="color: lightgrey" id="date6">1st June 2018</strong></div></div></a>
                               </div>
-                  <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
+                  <div class="col-sm-3 col-md-0 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
@@ -458,7 +472,7 @@
         </script>
 
     <script>
-        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'root', '', 'news');
+        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT COUNT(*) FROM trending";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
@@ -466,21 +480,21 @@
                     echo $row["COUNT(*)"]?>;i++)
         {
                 document.getElementById("heading"+i).innerHTML="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Title` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Title"];?>";
-             document.getElementById("image"+i).src="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+               document.getElementById("image"+i).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Image` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Image"];?>";
                 document.getElementById("brief"+i).innerHTML="<?php 
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Brief` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);
@@ -488,13 +502,19 @@
                     echo $row["Brief"];
                     ?>";
                 document.getElementById("date"+i).innerHTML="<?php 
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Date` FROM `trending` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Date"];            
                     ?>";
+        }
+        </script>
+        <script>
+        function searchStart()
+        {
+            document.getElementById("searchBox").style.visibility="hidden";
         }
         </script>
     

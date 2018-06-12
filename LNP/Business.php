@@ -458,7 +458,7 @@
         </script>
 
     <script>
-        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'root', '', 'news');
+        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT COUNT(*) FROM business";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
@@ -466,21 +466,21 @@
                     echo $row["COUNT(*)"]?>;i++)
         {
                 document.getElementById("heading"+i).innerHTML="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Title` FROM `business` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Title"];?>";
              document.getElementById("image"+i).src="<?php
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Image` FROM `business` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Image"];?>";
                 document.getElementById("brief"+i).innerHTML="<?php 
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Brief` FROM `business` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);
@@ -488,7 +488,7 @@
                     echo $row["Brief"];
                     ?>";
                 document.getElementById("date"+i).innerHTML="<?php 
-                    $db = mysqli_connect('localhost', 'root', '', 'news');
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT `Date` FROM `business` WHERE `ID`=1";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);

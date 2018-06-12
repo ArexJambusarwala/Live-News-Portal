@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-$db = mysqli_connect('localhost', 'root', '', 'news');
+$db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
 if(mysqli_connect_errno()){
 
 echo "Error".mysqli_connect_error();
