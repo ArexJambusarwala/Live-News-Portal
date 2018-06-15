@@ -9,6 +9,9 @@
     <title>NEWS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal with the latest news">
+    <meta name="keywords" content="live,news,portal,world,politics,business,livenewsportal">
+    <meta name="author" content="Arex Jambusarwala">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,7 +25,7 @@
 </head>
 
 
-<body>
+<body onload="searchStart()">
 
 
     <div id="particles-js">
@@ -43,13 +46,13 @@
 
     <nav class="navbar navbar-default" id="navaffix" data-spy="affix" data-offset-top="100">
         <div class="container-fluid" id="navb">
-            <div class="navbar-header" style="padding-right:330px;">
+            <div class="navbar-header" style="padding-right:370px;" id="navHead">
                 <div class="menu-icon">
                     <a href="javascript:void(0)" id="menu-button">
                         <!-- <span class="menu-text hidden-xs">Menu</span> --><i class="icon"></i>
                     </a>
                 </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navToggle" style="padding-right: 40px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navToggle" style="padding-right: 10px; float: right;">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -58,7 +61,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navToggle">
                 <ul class="nav navbar-nav" id="navul">
-                    <li class="dropdown active" style="margin-left:10px;margin-right: 10px;"onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" ><b style="font-size: 20px;">Trending</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                    <li class="dropdown active" nmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle"  data-toggle="dropdown" href="#" ><b style="font-size: 20px;">Trending</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Fashion</a></li>
                             <li><a href="#">Sci-tech</a></li>
@@ -66,7 +69,7 @@
                             <li><a href="index.php">All Trending News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)" ><a class="dropdown-toggle" data-toggle="dropdown" href="India.html" ><b style="font-size: 20px;">India</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                    <li class="dropdown" onmouseover="caret(this)" onmouseout="caretOff(this)" ><a class="dropdown-toggle" data-toggle="dropdown" href="India.html" ><b style="font-size: 20px;">India</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
@@ -74,7 +77,7 @@
                             <li><a href="India.php">All Indian News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;" onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle" data-toggle="dropdown" href="World.html" ><b style="font-size: 20px;">World</b>&nbsp;<i class="fa fa-caret-down"></i></a>
+                    <li class="dropdown" onmouseover="caret(this)" onmouseout="caretOff(this)"><a class="dropdown-toggle" data-toggle="dropdown" href="World.html" ><b style="font-size: 20px;">World</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Politics</a></li>
                             <li><a href="#">Criminal</a></li>
@@ -82,7 +85,7 @@
                             <li><a href="World.php">All World News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;"onmouseover="caret(this)" onmouseout="caretOff(this)">
+                    <li class="dropdown" nmouseover="caret(this)" onmouseout="caretOff(this)">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="Sports.html"  ><b style="font-size: 20px;">Sports</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
@@ -91,7 +94,7 @@
                             <li><a href="Sports.php">All Sports News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
+                    <li class="dropdown"  onmouseover="caret(this)" onmouseout="caretOff(this)">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="Tech.html" ><b style="font-size: 20px;">Tech</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
@@ -100,7 +103,7 @@
                             <li><a href="Tech.php">All Tech News</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" style="margin-left:10px;margin-right: 10px;"  onmouseover="caret(this)" onmouseout="caretOff(this)">
+                    <li class="dropdown"  onmouseover="caret(this)" onmouseout="caretOff(this)">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="Business.html" ><b style="font-size: 20px;">Business</b>&nbsp;<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cricket</a></li>
@@ -111,11 +114,22 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <a  style="font-size: 30px; top: 1%;" onclick="toggleSearch()"><i class="glyphicon glyphicon-search" id="glysearch"></i></a>
+                    <a  style="font-size: 30px; top: 1%; padding-left:15px" onclick="toggleSearch()"><i class="glyphicon glyphicon-search" id="glysearch"></i></a>
                 </ul>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search" id="searchBox" style="visibility: hidden">
+                <form class="navbar-form navbar-right" style="max-width:300px !important;" id="testing">
+                    <div class="form-group" >
+                        <script>
+  (function() {
+    var cx = '001135896050108742372:rtujuu1x3ik';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script><span id="searchBox">
+                        <gcse:search></gcse:search></span>
                     </div>
                 </form>
             </div>
@@ -125,7 +139,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-lg-2" style="padding-left: 0;">
+            <div class="col col-sm-2 col-md-2 col-lg-2" style="padding-left: 0; z-index:123131 !important;">
         <nav id="sidebar" style="background-color: whitesmoke" data-spy="affix" data-offset-top="100">
 
             <ul class="list-unstyled components" id="sideul">
@@ -166,77 +180,14 @@
             </div>
             
 
-           <!-- <div id="market">
-                <center>
-                    <h3>Market</h3>
 
-                <span>
-                   <marquee direction="right" scrolldelay="100" height="40px;" id="stock" ><h4>
-                   AUTO  24507.54 <span style="color:red">-0.25% </span>
-                       BANKEX 29274.31 <span style="color:red">-0.46% </span>
-<b>BSE-CG</b>
-18961.51
-                       <span style="color:red">-0.57%</span>
-<b>BSE-CD</b>
-20905.90
-                       <span style="color:red">-0.30%</span>
-<b>BSEFMC</b>
-11198.73
-                       <span style="color:red">-0.35%</span>
-<b>BSE-HC</b>
-13138.77
-                       <span style="color:red">-0.57%</span>
-<b>BSE-IT</b>
-13323.80
-<span style="color:red">-0.28%</span>
-<b>METAL</b>
-13634.89
-<span style="color:red">-0.02%</span>
-<b>REALTY</b>
-2249.54
-<span style="color:red">-0.35%</span>
-<b>TECK</b>
-6914.75
-<span style="color:red">-0.30%</span>
-<b>POWER</b>
-2146.39
-<span style="color:lawngreen">+0.65%</span>
-<b>BASMTR</b>
-3149.74
-<span style="color:red">-0.31%</span>
-<b>CDGS</b>
-4171.83
-                       <span style="color:red">-0.10% &nbsp; </span>
-<b>ENERGY</b>
-3952.00
-                       <span style="color:red">-0.22% &nbsp; </span>
-<b>FIN</b>
-5882.12
-                       <span style="color:red">-0.31% &nbsp; </span>
-<b>INDSTR</b>
-3572.82
-                       <span style="color:red">-0.35% &nbsp;</span>
-<b>TELCOM</b>
-1210.29
-                       <span style="color:red">-0.35% &nbsp;</span>
-<b>UTLIS</b>
-2035.39
-                       <span style="color:lawngreen">+0.41% &nbsp;</span>
-</h4></marquee>
-               </span>
-                 </center>
-
-            </div>
-            <iframe id="moneywiz_widget" name="moneywiz_widget"  style="float: right;"
-            src="//money.rediff.com/widget/moneywizwidget" scrolling="no" frameborder="0" marginHeight="0" marginWidth="0" style="width:auto; height:150px"></iframe>
-            -->
-        <div class="col col-lg-10">
+        <div class="col  col-sm-10 col-md-10 col-lg-10" id="some1">
         <div id="content" class="container">
-            <center><h1 style="margin-top: 5px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;">World</h1></center>
+            <center><h1 style="margin-top: 10px; margin-bottom: 15px; font-family: fira Sans; font-weight: 700;  font-style: normal;" id="pageHeading">World</h1></center>
               <div class="row">
                   <div id="world_1">
-                  <a  href="Trending1.php" title="Read more">
-                      <div class="col-sm-3 col-md-3 col-lg-3">
+                  <a  href="Trending1.php#section1" title="Read more">
+                      <div class="col-md-4 col-lg-3">
                           <img id="image1" src="" width=262.5 height=280 style="  object-fit: cover;">
                           <center>
                               <h3 id="heading1" style="max-height: 79.2px; overflow:hidden"></h3>
@@ -250,14 +201,14 @@
                     </a>
                   </div>
                   <div id="world_2">
-                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
+                      <a  href="Trending1.php#section2" title="Read more">   <div class="col-md-4 col-lg-3"><img id="image2" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading2"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief2"></span><br><br>
                                      <div class="uploadDate"><strong style="color: lightgrey" id="date2"></strong></div></div></a>
                   </div>
                   <div id="world_3">
-                      <a  href="Trending1.php"title="Read more">   <div class="col-sm-3 col-md-3 col-lg-3" ><img id="image3" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovtddd dqdq dqdq</h3></center> <span id="brief3">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
-                   <div class="uploadDate"><strong style="color: lightgrey" id="date3">1st June 2018</strong></div></div></a>
+                      <a  href="Trending1.php#section3" title="Read more">   <div class="col-md-4 col-lg-3" ><img id="image3" src="" width=262.5 height=280; style="  object-fit: cover;"><center><h3 id="heading3"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief3"></span><br><br>
+                   <div class="uploadDate"><strong style="color: lightgrey" id="date3"></strong></div></div></a>
                   </div>
-                  <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
+                  <div class="col-md-0 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;" id="otherStories1">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
@@ -295,23 +246,50 @@
                       
 </div>
         </div><br><br><br>
+            <div class="row" id="otherStories3" style="margin-bottom: 60px; border-bottom:2px solid rgba(128,128,128,0.5);">
+                <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700; padding-left:27px;">Other Stories</h2><hr>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+            </div>
                           <div class="row">
                               <div id="world_4">
-                                  <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image4" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
-                      <div class="uploadDate"><strong style="color: lightgrey" id="date4">1st June 2018</strong></div>
+                                  <a  href="Trending1.php#section4" title="Read more"><div class="col-md-4 col-lg-3"><img id="image4" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading4"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief4" style="max-height: 79.2px; overflow:hidden"></span><br><br>
+                      <div class="uploadDate"><strong style="color: lightgrey" id="date4"></strong></div>
 
 
                       </div></a>
                               </div>
                                   <div id="world_5">
-                                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image5" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
-                                        <div class="uploadDate"><strong style="color: lightgrey" id="date5">1st June 2018</strong></div></div></a>
+                                      <a  href="Trending1.php#section5" title="Read more"><div class="col-md-4 col-lg-3"><img id="image5" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading5"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief5" style="max-height: 79.2px; overflow:hidden"></span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date5"></strong></div></div></a>
                               </div>
                   <div id="world_6">
-                      <a  href="Trending1.php"title="Read more"><div class="col-sm-3 col-md-3 col-lg-3"><img id="image6" src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden">Govt govt govt govtgovt</h3></center> <span id="brief6">"A brief para about the news Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</span><br><br>
-                                        <div class="uploadDate"><strong style="color: lightgrey" id="date6">1st June 2018</strong></div></div></a>
+                      <a  href="Trending1.php#section6" title="Read more"><div class="col-md-4 col-lg-3"><img id="image6" src="" width=262.5 height=280 style="  object-fit: cover;"><center><h3 id="heading6"  style="max-height: 79.2px; overflow:hidden"></h3></center> <span id="brief6"></span><br><br>
+                                        <div class="uploadDate"><strong style="color: lightgrey" id="date6"></strong></div></div></a>
                               </div>
-                  <div class="col-sm-3 col-md-3 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;">
+                  <div class="col-md-0 col-lg-3" style="border-style: solid; border-radius: 5px; border-color: rgba(128,128,128,0.5);border-left-color: white;border-right-color: white; border-width: 2px; padding-bottom: 10px;" id="otherStories2">
                       <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700">Other Stories</h2>
                   <hr>
                       <div class="container-fluid">
@@ -349,6 +327,33 @@
                       
 </div>
         </div>
+            <div class="row" id="otherStories4" style="margin-bottom: 60px; border-bottom:2px solid rgba(128,128,128,0.5);">
+                <h2 style="font-family:Roboto Condensed; font-size: 27px; font-weight: 700; padding-left:27px;">Other Stories</h2><hr>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+                <a href="Trending1.php">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="col col-lg-9" style="max-height: 100;"><h6 style="color:#e60909; font-weight: 700; margin-bottom: 6px;">INDIA</h6>
+                                    <span class="subtext" style="font-size:14px; letter-spacing:2px;">Ut enim ad minim veniam, quis nostruds Lorem ipsum...</span>
+                                    </div>
+                                    <div class="col col-lg-3"><img src="Robert_Downey_Jr_2014_Comic_Con_(cropped).jpg" height=100 style="  object-fit: cover;"></div>
+                    </div>
+                </a>
+            </div>
 </div>
             </div>
 </div>
@@ -422,12 +427,14 @@
                     document.getElementById("navb").style.transition = "all 1s";
                     document.getElementById("navb").style.marginLeft = "-1100px";
                     document.getElementById("searchBox").style.visibility = "visible";
+                    document.getElementById("testing").style.display="inline";
+                    document.getElementById("searchBox").style.display = "inline";
                     document.getElementById("glysearch").className = "glyphicon glyphicon-remove";
                     current = 0;
                 } else {
                     document.getElementById("navb").style.transition = "all 1s";
                     document.getElementById("navb").style.marginLeft = "0px";
-                    document.getElementById("searchBox").style.visibility = "hidden";
+                    document.getElementById("searchBox").style.display = "none";
                     document.getElementById("glysearch").className = "glyphicon glyphicon-search";
                     current = 1;
                 }
@@ -458,46 +465,390 @@
         </script>
 
     <script>
-        for(var i=1;i<=<?php  $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+      /*  for(i=1;i<=<?php  $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
                     $query="SELECT COUNT(*) FROM world";
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["COUNT(*)"]?>;i++)
-        {
-                document.getElementById("heading"+i).innerHTML="<?php
+        {*/
+                document.getElementById("heading"+1).innerHTML="<?php
                     $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
-                    $query="SELECT `Title` FROM `world` WHERE `ID`=1";
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".$rowc["COUNT(*)"];
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Title"];?>";
-             document.getElementById("image"+i).src="<?php
+               document.getElementById("image"+1).src="<?php
                     $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
-                    $query="SELECT `Image` FROM `world` WHERE `ID`=1";
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".$rowc["COUNT(*)"];
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Image"];?>";
-                document.getElementById("brief"+i).innerHTML="<?php 
+                document.getElementById("brief"+1).innerHTML="<?php 
                     $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
-                    $query="SELECT `Brief` FROM `world` WHERE `ID`=1";
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".$rowc["COUNT(*)"];
                     $query=mysqli_real_escape_string($db,$query);
-                    $result=mysqli_query($db,$query);
+                    $result=mysqli_query($db,$query);   
                     $row=mysqli_fetch_assoc($result);
-                    echo $row["Brief"];
-                    ?>";
-                document.getElementById("date"+i).innerHTML="<?php 
+                    echo $row["Brief"];?>";
+                document.getElementById("date"+1).innerHTML="<?php 
                     $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
-                    $query="SELECT `Date` FROM `world` WHERE `ID`=1";
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".$rowc["COUNT(*)"];
                     $query=mysqli_real_escape_string($db,$query);
                     $result=mysqli_query($db,$query);
                     $row=mysqli_fetch_assoc($result);
                     echo $row["Date"];            
                     ?>";
+        
+                document.getElementById("heading"+2).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-1);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+               document.getElementById("image"+2).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-1);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+2).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-1);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+2).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-1);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+                        document.getElementById("heading"+3).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-2);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+               document.getElementById("image"+3).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-2);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+3).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-2);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+3).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-2);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+                        document.getElementById("heading"+4).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-3);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+               document.getElementById("image"+4).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-3);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+4).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-3);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+4).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-3);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+                        document.getElementById("heading"+5).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-4);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+               document.getElementById("image"+5).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-4);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+5).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-4);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+5).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-4);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+                        document.getElementById("heading"+6).innerHTML="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Title` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-5);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Title"];?>";
+               document.getElementById("image"+6).src="<?php
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Image` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-5);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);   
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Image"];?>";
+                document.getElementById("brief"+6).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $queryc="SELECT COUNT(*) FROM world";
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query="SELECT `Brief` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-5);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Brief"];
+                    ?>";
+                document.getElementById("date"+6).innerHTML="<?php 
+                    $db = mysqli_connect('localhost', 'livenews_portal', 'creatives@2k18', 'livenews_news');
+                    $query="SELECT `Date` FROM `world` WHERE `ID`=".($rowc["COUNT(*)"]-5);
+                    $queryc=mysqli_real_escape_string($db,$queryc);
+                    $resultc=mysqli_query($db,$queryc);   
+                    $rowc=mysqli_fetch_assoc($resultc);
+                    $query=mysqli_real_escape_string($db,$query);
+                    $result=mysqli_query($db,$query);
+                    $row=mysqli_fetch_assoc($result);
+                    echo $row["Date"];            
+                    ?>";
+       // }
+        </script>
+        <script>
+        function searchStart()
+        {
+            document.getElementById("searchBox").style.visibility="hidden";
+            document.getElementById("testing").style.display="none";
         }
         </script>
+        <script>
+            window.onscroll = function() {testScroll()};
     
+            function testScroll()
+            {
+                if(window.pageYOffset>100)
+                    {
+                        document.getElementById("pageHeading").style.marginTop = "75px";
+                    }
+                else
+                    {
+                        document.getElementById("pageHeading").style.marginTop = "10px";
+                    }
+                if($(window).width()>1436)
+                {
+                    if(window.pageYOffset>600)
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="0";
+                    }
+                    else
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="1";
+                    }
+                }
+                else if($(window).width()>1210)
+                {
+                    if(window.pageYOffset>1125)
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="0";
+                    }
+                    else
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="1";
+                    }
+                }
+                else if($(window).width()>972.4)
+                {
+                    if(window.pageYOffset>1125)
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="0";
+                    }
+                    else
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="1";
+                    }
+                }
+                else
+                {
+                    if(window.pageYOffset>3400)
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="0";
+                    }
+                    else
+                    {
+                        document.getElementById("sidebar").style.transition = "all 0.8s";
+                        document.getElementById("sidebar").style.opacity="1";
+                    }
+                }
+                if(document.getElementById("sidebar").style.opacity=="0")
+                {
+                    document.getElementById("sidebar").style.visibility="hidden";
+                }
+                else
+                {
+                    document.getElementById("sidebar").style.visibility="visible";
+                }
+            }
+
+            
+            
+        </script>
+        <script>
+            window.addEventListener("resize", navChange);
+            function navChange()
+            {
+                var i= 370- (screen.width-$(window).width());
+                if(document.getElementById("navHead").style.paddingRight>"0px")
+                    document.getElementById("navHead").style.paddingRight= i+"px";
+                else
+                {
+                    if(i>0)
+                    document.getElementById("navHead").style.paddingRight= i+"px";
+                }
+            }
+        
+        </script>
 </body>
 
 

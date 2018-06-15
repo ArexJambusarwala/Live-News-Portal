@@ -599,3 +599,29 @@ html {
 }
 
 /* -------------------------------*/
+
+/* Media queries */
+
+@media screen and (min-width:1436.1px)
+{
+    #otherStories3,#otherStories4
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:1436px)
+{
+    #otherStories1,#otherStories2
+    {
+        display: none;
+    }
+    #otherStories3,#otherStories4
+    {
+        display: block;
+    }
+}
+
+
+
+
+/* ------------------------------*/
