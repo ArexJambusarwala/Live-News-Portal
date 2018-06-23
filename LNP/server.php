@@ -14,13 +14,13 @@ else
 
 if(isset($_POST['sub']))
 {
-    $_SESSION["title"]=$_POST["title"];
-    $_SESSION["d"]=$_POST["date"];
-    $_SESSION["content"]=$_POST["content"];
-    $_SESSION["highlights"]=$_POST["highlights"];
-    $_SESSION["brief"]=$_POST["brief"];
-    $_SESSION["category"]=$_POST["category"];
-    $_SESSION["image"]=$_POST["upload"];
+    $_SESSION["title"]=mysqli_real_escape_string($db, $_POST["title"]);
+    $_SESSION["d"]=mysqli_real_escape_string($db, $_POST["date"]);
+    $_SESSION["content"]=mysqli_real_escape_string($db, $_POST["content"]);
+    $_SESSION["highlights"]=mysqli_real_escape_string($db, $_POST["highlights"]);
+    $_SESSION["brief"]=mysqli_real_escape_string($db, $_POST["brief"]);
+    $_SESSION["category"]=mysqli_real_escape_string($db, $_POST["category"]);
+    $_SESSION["image"]=mysqli_real_escape_string($db, $_POST["upload"]);
 }
 
 $query = "INSERT INTO `". $_SESSION["category"]."` (`Highlights`, `Title`, `Brief`, `Content`, `Date`, `Image`) 
